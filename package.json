@@ -1,6 +1,6 @@
 {
     "name": "react-multi-autocomplete",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "description": "React component to create an autocomplete input with multiple completions",
     "author": "Thomas Roger Lux <thomas@rogerlux.dev>",
     "license": "MIT",
