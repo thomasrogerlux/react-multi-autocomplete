@@ -47,3 +47,9 @@ jobs:
         run: yarn build
         env:
           CI: true
+
+      - name: Publish to NPM
+        if: github.event_name == 'push' && contains(github.ref, 'refs/tags/')
+        run: |
+          npm set "//registry.npmjs.org/:_authToken" "${{ secrets.NPM_TOKEN }}"
+          npm publish
